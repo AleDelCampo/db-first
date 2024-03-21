@@ -1,27 +1,37 @@
 Tabella: AutoInVendita
 
-targa:
-veicolo:
-modello:
-carburante:
-media_consumi:
-cilindrata:
-cambio:
-km:
-stato_motore:
-stato_carrozzeria:
-anno_produzione:
-kw/h:
-peso:
-4x4:
-precedente_proprietario:
-email_precedente_proprietario:
-telefono_precedente_proprietario:
-ultimo_tagliando:
-ultima_revisione:
-ultima_assicurazione:
-foto:
-carrozzeria:
+targa: VARCHAR(7), PK
+email_precedente_proprietario: TEXT, NULL, UNIQUE
+descrizione: TEXT, NULL
+stato_motore: VARCHAR(20), NOTNULL, UNIQUE
+stato_carrozzeria: VARCHAR(20), NOTNULL, UNIQUE
+veicolo: VARCHAR(20), NOTNULL
+modello: VARCHAR(40), NOTNULL
+carburante: VARCAHAR(10), NULL
+cambio: VARCHAR(40), NULL
+
+precedente_proprietario: VARCHAR(60), NULL
+
+
+prezzo: MEDIUMINT, NOTNULL
+km: MEDIUMINT, NULL
+
+cavalli: SMALLINT, NULL
+peso_kg: SMALLINT, NULL
+cc: SMALLINT, NULL
+
+kw/h: FLOAT(600, 2), NULL
+
+4x4: TINYINT, NULL
+telefono_precedente_proprietario: TINYINT, NULL, UNIQUE
+foto: TINYINT, NULL
+consumo_al_l: TINYINT, NULL
+
+anno_produzione: YEAR, NULL
+
+ultima_assicurazione: DATE, NOTNULL
+ultimo_tagliando: DATE, NULL
+ultima_revisione: DATE, NULL
 
 
 
