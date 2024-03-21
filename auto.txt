@@ -1,7 +1,7 @@
 Tabella: AutoInVendita
 
 targa: VARCHAR(7), PK
-email_precedente_proprietario: TEXT, NULL, UNIQUE
+email_precedente_proprietario: TEXT, NULL
 descrizione: TEXT, NULL
 stato_motore: VARCHAR(20), NOTNULL, UNIQUE
 stato_carrozzeria: VARCHAR(20), NOTNULL, UNIQUE
@@ -23,7 +23,7 @@ cc: SMALLINT, NULL
 kw/h: FLOAT(600, 2), NULL
 
 4x4: TINYINT, NULL
-telefono_precedente_proprietario: TINYINT, NULL, UNIQUE
+telefono_precedente_proprietario: TINYINT, NULL
 foto: TINYINT, NULL
 consumo_al_l: TINYINT, NULL
 
